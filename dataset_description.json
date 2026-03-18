@@ -1,0 +1,17 @@
+{
+    "Name": "FALCON Benchmark M1-B: primary motor cortex recordings in primate during reach-to-grasp task",
+    "BIDSVersion": "1.10",
+    "HEDVersion": "8.3.0",
+    "Description": "This dataset contains multiunit spiking times and behavioral data from a macaque performing a reach-to-grasp task. The experimental task was a center-out reaching task with four different objects in eight possible positions. Neural activity was recorded from electrode arrays implanted in primary motor cortex (M1). Electromyographical (EMG) activity was simultaneously recorded from upper limb muscles. Provided as part of the FALCON Benchmark: https://snel-repo.github.io/falcon/ \n\nThe datafile contains the following data in the acquisition fields: `preprocessed_emg` containing iEMG recordings from 16 muscles and `eval_mask` indicating within-trial periods used for evaluating performance in the FALCON Benchmark. Each datafile also includes spike times in the `units` field, and trial metadata for each reach and grasp (`gocue_time`, `move_onset_time`, `contact_time`, `reward_time`, `result`, `number`, `tgt_loc`, `tgt_obj`, `obj_id`, `condition_id`) in the `trials` field.\n\nAs part of the FALCON challenge, dataset files are released in three ways. The `held-in-calib` data includes many trials of data intended for calibration of decoders in the FALCON challenge. The `held-in-minival` data is a small subset of the `held-in-calib` data intended for FALCON models to validate submission format. Lastly, `held-out-calib` data are separate sessions of data from `held-in-calib`, but have much fewer trials, intended to be used for few-shot recalibration. Please bear in mind these factors if making use of this dataset for purposes outside of the FALCON Benchmark. Each dataset split is considered one \"subject\" by the DANDI repository; only data from one monkey is included.\n\nData from an additional monkey is available here: https://dandiarchive.org/dandiset/000941",
+    "DatasetType": "raw",
+    "Authors": [],
+    "License": "CC-BY-4.0",
+    "GeneratedBy": [
+        {
+            "Name": "nwb2bids",
+            "Version": "0.9.1.dev27+gf0fb7253c",
+            "Description": "Tool to reorganize NWB files into a BIDS directory layout.",
+            "CodeURL": "https://github.com/con/nwb2bids"
+        }
+    ]
+}
